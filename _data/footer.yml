@@ -1,0 +1,15 @@
+address: "12 Place Gambetta - 33000 Bordeaux"
+copyright: "&copy; Arpinum 2010-2017"
+
+legal_title: Mentions légales
+legal_url: /mentions-legales/
+
+social_links:
+    - name: twitter
+      url: https://twitter.com/arpinum
+    - name: google
+      url: https://plus.google.com/106794470967856926301/about
+    - name: linkedin
+      url: https://www.linkedin.com/company/arpinum
+    - name: github
+      url: http://github.com/arpinum

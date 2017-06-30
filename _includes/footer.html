@@ -1,0 +1,34 @@
+<a href="#top" class="btn btn-backtotop" data-title="Remonter">
+    <i class="fa fa-chevron-up"></i>
+</a>
+
+<footer class="app-footer">
+    <div class="container">
+        <p class="app-footer-legal">
+            {% if site.data.footer.address %}
+            {{ site.data.footer.address }}
+            {% endif %}
+            <br>
+            {% if site.data.footer.copyright %}
+            {{ site.data.footer.copyright }}
+            {% endif %}
+
+            {% if site.data.footer.legal_url %}
+            - <a href="{{ site.data.footer.legal_url }}">{{ site.data.footer.legal_title }}</a>
+            {% endif %}
+        </p>
+        <nav class="app-footer-social">
+            <ul>
+                {% for social in site.data.footer.social_links %}
+                {% if social.url %}
+                <li>
+                    <a href="{{ social.url }}" target="_blank">
+                        <img src="/assets/images/footer/footer-rs-{{ social.name }}.png" alt="{{ social.name }}">
+                    </a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</footer>

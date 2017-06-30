@@ -1,0 +1,57 @@
+.app-footer {
+  background-color: $tune;
+  background-image: linear-gradient(to right,  $tune 0%,$loulou 100%);
+  color: $color-light;
+  text-align: right;
+  padding-bottom:10px;
+
+  > div {
+    height: 100%;
+  }
+
+  .app-footer-legal,
+  .app-footer-social {
+    width: 100%;
+
+  }
+
+  // App footer Legal
+
+  .app-footer-legal {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .app-footer-legal a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .app-footer-legal a:hover {
+    //color: lighten($color-light, 25%);
+  }
+
+  // App footer Social
+
+  .app-footer-social {
+    display: inline-block;
+    line-height: inherit;
+    color: $white;
+    text-align: center;
+
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  .app-footer-social > ul > li > a {
+    padding: 0.4em;
+  }
+
+  .app-footer-social img {
+    height: 2.6em;
+    vertical-align: middle;
+  }
+}

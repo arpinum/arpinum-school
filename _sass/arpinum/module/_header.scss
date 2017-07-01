@@ -1,0 +1,60 @@
+.app-nav {
+
+  background-color: $black;
+  color: $whitesmoke;
+  padding: 5px 0;
+  position: fixed;
+  width: 100%;
+
+  @include grid-container;
+
+  .brand {
+    @include grid-column(6);
+    vertical-align: middle;
+    height: 50px;
+
+    img {
+      height: auto;
+      max-height: 100%;
+      max-width: 100%;
+      width: auto;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  nav {
+    @include grid-push(8);
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+
+    ul {
+      padding-right: 5px;
+      text-align: right;
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    li > a {
+      &:after {
+        content: "";
+        display: block;
+        left: 0;
+        right: 0;
+        height: 2px;
+        opacity: 0;
+        background-color: $color-light;
+        transform: translateY(110%);
+        transition: $base-duration ease-in-out;
+      }
+
+      &:hover:after {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
+  }
+}

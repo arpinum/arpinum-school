@@ -1,4 +1,16 @@
 .jumbo {
   text-align: center;
+  color:$dark-gray;
   background-color: $black;
+  background-image: url(../images/assets/bg-light.jpg);
+
+  font-size:2.6em;
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $color-dark;
+  }
 }

@@ -19,8 +19,6 @@ description: > # this means to ignore newlines until "baseurl:"
   Le mentoring par Arpinum
 baseurl: "/"
 url: "http://arpinum.school"
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
 markdown: kramdown

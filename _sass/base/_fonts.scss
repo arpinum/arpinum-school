@@ -1,0 +1,26 @@
+@include font-face(
+                'Avenir regular',
+                '../fonts/AvenirNextLTPro-Regular',
+                        ("eot", "woff", "ttf", "svg")
+) {
+  font-style: normal;
+  font-weight: 400;
+}
+
+@include font-face('Avenir bold',
+'../fonts/AvenirNextLTPro-Bold',
+                ('eot', 'woff', 'ttf', 'svg')) {
+  font-style: normal;
+  font-weight: 700;
+}
+
+@include font-face('Avenir medium',
+'../fonts/AvenirNextLTPro-Demi',
+                ('eot', 'woff', 'ttf', 'svg')) {
+  font-style: normal;
+  font-weight: 400;
+}
+
+$font-arpinum-regular: 'avenir regular';
+$font-arpinum-medium: 'avenir medium';
+$font-arpinum-bold: 'avenir bold';

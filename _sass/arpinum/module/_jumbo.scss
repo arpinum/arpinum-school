@@ -3,7 +3,7 @@
   color:$dark-gray;
   background: $black url(../images/assets/bg-light.jpg) repeat-y fixed;
 
-  font-size:2.6em;
+  font-size:modular-scale(4);
 
   h1 {
     text-transform: uppercase;

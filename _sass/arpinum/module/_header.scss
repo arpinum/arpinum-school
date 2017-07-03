@@ -2,16 +2,18 @@
 
   background-color: $black;
   color: $whitesmoke;
-  padding: 5px 0;
+  padding: $small-spacing 0;
   position: fixed;
   width: 100%;
+  top: 0;
+  z-index: 1;
 
   @include grid-container;
 
   .brand {
     @include grid-column(6);
     vertical-align: middle;
-    height: 50px;
+    height: $header-height;
 
     img {
       height: auto;
@@ -25,7 +27,7 @@
 
   nav {
     @include grid-push(8);
-    height: 50px;
+    height: $header-height;
     line-height: 50px;
     text-transform: uppercase;
 
